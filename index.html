@@ -1,91 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-        <title>WebStudio</title>
-        
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
-  <header>
-          <p> <a href="#">WebStudio</a></p> 
-      <nav>
+  <body>
+    <header>
+      <p class="header-logo"><a href="#">WebStudio</a></p>
+      <nav class="header-navigation">
+        <ul class="header-list">
+          <li><a class="link" href="index.html">Estudio</a></li>
+          <li><a class="link" href="portafolio.html">Portafolio</a></li>
+          <li><a class="link" href="#">Contactos</a></li>
+        </ul>
+
+        <ul class="header-list">
+          <li>
+            <a class="link" href="info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li><a class="link" href="+52 55 5529 6000">+52 55 5529 6000</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="h1-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+        <button class="reserva-btn" type="button">
+          Solicite nuestro servicio
+        </button>
+      </section>
+      <section>
+        <ul class="h2-list">
+          <li><h2>ATENCIÓN A LOS DETALLES</h2></li>
+          <p class="ph2-list">
+            Nos adentramos en todos los detalles y procesos de su negocio, para
+            así desarrollar una solución a su medida.
+          </p>
+          <li><h2>PUNTUALIDAD</h2></li>
+          <p class="ph2-list">
+            Con nosotros, usted puede sentirse seguro y protegido. Un principio
+            importante de la empresa: respetar su tiempo y respetar los plazos
+            acordados.
+          </p>
+          <li><h2>PLANIFICACIÓN</h2></li>
+          <p class="ph2-list">
+            Usted podrá observar y participar en cada fase del desarrollo y
+            aplicación de soluciones.
+          </p>
+          <li><h2>TEGNOLOGÍA MODERNA</h2></li>
+          <p class="ph2-list">
+            Usamos herramientas innovadoras para resolver las tareas asignadas.
+            Es hora de simplificar los procesos laborales.
+          </p>
+        </ul>
+      </section>
+      <section>
         <ul>
-            <li><a href="#">Estudio</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contactos</a></li>
+          <h2 class="h2-subtitle">A qué nos dedicamos</h2>
+          <li>
+            <img
+              src="imagenes/laptop1.jpg"
+              alt="persona usando un computador portatil"
+              width="373"
+              height="323"
+            />
+          </li>
+          <li>
+            <img
+              src="imagenes/control2.jpg"
+              alt="persona con celular"
+              width="373"
+              height="323"
+            />
+          </li>
+          <li>
+            <img
+              src="imagenes/ipad3.jpg"
+              alt="persona con tablet"
+              width="373"
+              height="323"
+            />
+          </li>
         </ul>
-        
         <ul>
-            <a href="info@devstudio.com"><li>info@devstudio.com</a></li>
-            <a href="+52 55 5529 6000"><li>+52 55 5529 6000</a></li>
+          <h2 class="h2-subtitle">NUESTRO EQUIPO</h2>
+          <li>
+            <img
+              src="imagenes/hombregafascamisamarron4.jpg"
+              alt=" persona con gafas"
+              width="270"
+              height="260"
+            />
+          </li>
+          <figcaption class="caption-pic">Andres Cubo</figcaption>
+          <p class="ph2-caption">Diseñador de Productos</p>
         </ul>
-    </nav>
-   </header>
-
-  <main>
-
-     <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-     <button type="button">Solicite nuestro servicio</button>
-
-        <ul>       
-            <li><h2>ATENCIÓN A LOS DETALLES</h2></li>
-              <p>Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solución a su medida.</p>
-            <li><h2>PUNTUALIDAD</h2></li>
-              <p>Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y respetar los plazos acordados.</p>
-            <li><h2>PLANIFICACIÓN</h2></li>
-              <p>Usted podrá observar y participar en cada fase del desarrollo y aplicación de soluciones.</p>
-            <li><h2>TEGNOLOGÍA MODERNA</h2></li> 
-              <p>Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>                         
+        <ul>
+          <li>
+            <img
+              src="imagenes/mujercongafas5.jpg"
+              alt="mujer con gafas"
+              width="270"
+              height="260"
+            />
+          </li>
+          <figcaption class="caption-pic">Carla Palacios</figcaption>
+          <p class="ph2-caption">Desarrolladora Frontend</p>
         </ul>
-
-         <h2>A qué nos dedicamos</h2>
-      <li><img src="imagenes/laptop1.jpg" alt="persona usando un computador portatil" width="373" height="323"/></li>
-      <li><img src="imagenes/control2.jpg" alt="persona con celular" width="373" height="323"/></li>
-      <li><img src="imagenes/ipad3.jpg" alt="persona con tablet" width="373" height="323"/></li>
-    <ul>
-    <h2>NUESTRO EQUIPO</h2>
-    <ul>
-      <li><img src="imagenes/hombregafascamisamarron4.jpg" alt=" persona con gafas"width="270" height="260"/></li>
-    <figcaption>
-        Andres Cubo
-        Diseñador de Productos
-      </figcaption>
-    </ul>
-    <ul>
-      <li><img src="imagenes/mujercongafas5.jpg" alt="mujer con gafas"width="270" height="260"/></li>
-    <figcaption>
-        Carla Palacios
-        Desarrolladora Frontend
-      </figcaption>
-    </ul>
-    <ul>
-      <li><img src="imagenes/hombrecamisa azul6.jpg" alt="hombre cucasico"width="270" height="270"/></li>
-    <figcaption>
-        Mario Dorado
-        Marketing
-      </figcaption>
-    </ul>
-    <ul>
-      <li><img src="imagenes/hombregafas camisetanegra7.jpg" alt="hombre de gafas"width="260" height="270"/></li>
-    <figcaption>
-        Pablo Mijangos
-        Diseñador  IU
-      </figcaption>
-    </ul>
-</main>   
-        <footer>
-         <h3><a href="#">WebStudio</a></h3>
-     <ul>
+        <ul>
+          <li>
+            <img
+              src="imagenes/hombrecamisa azul6.jpg"
+              alt="hombre cucasico"
+              width="270"
+              height="270"
+            />
+          </li>
+          <figcaption class="caption-pic">Mario Dorado</figcaption>
+          <p class="ph2-caption">Marketing</p>
+        </ul>
+        <ul>
+          <li>
+            <img
+              src="imagenes/hombregafas camisetanegra7.jpg"
+              alt="hombre de gafas"
+              width="260"
+              height="270"
+            />
+          </li>
+          <figcaption class="caption-pic">Pablo Mijangos</figcaption>
+          <p class="ph2-caption">Diseñador IU</p>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <h3 class="header-logo"><a href="#">WebStudio</a></h3>
       <address>
-        <li><a href="#">Calz.Ticoman 500,ciudad de Mexico,CDMX,Mexico</a></li>        
-        <li><a href="#">info@example.com</a></li>
-        <li><a href="#">+52 55 5529 6000</a></li>
+        <ul class="footer-list">
+          <li><a href="#">Calz.Ticoman 500,ciudad de Mexico,CDMX,Mexico</a></li>
+          <li><a href="#">info@example.com</a></li>
+          <li><a href="#">+52 55 5529 6000</a></li>
+        </ul>
       </address>
-     </ul> 
-
     </footer>
-</body>
-    
-   
+  </body>
 </html>

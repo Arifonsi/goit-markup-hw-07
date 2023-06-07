@@ -1,6 +1,126 @@
-#textual{
-  color: blue;
+html {
+  scroll-behavior: smooth;
 }
-#textual{
-  font-size: xx-large;
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30.52px;
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #212121;
+  cursor: pointer;
+}
+
+.link {
+  color: #2f303a;
+}
+
+.link:hover {
+  color: #2196f3;
+}
+
+.h1-title {
+  font-weight: 900;
+  font-size: 44px;
+  font-weight: 60px;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+.reserva-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+.h2-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+
+.ph2-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.h2-subtitle {
+  font-weight: 700;
+  font-size: 36;
+  line-height: 42.19px;
+}
+
+.caption-pic {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #212121;
+}
+
+.ph2-caption {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 42.19px;
+  color: #757575;
+}
+
+.footer-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #2f303a;
+  cursor: pointer;
+}
+
+-------------------------------------------------------------------------------------
+  .div-buttons {
+  font-size: 500;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #212121;
+  cursor: pointer;
+}
+
+.div-buttons .link {
+  color: #212121;
+}
+
+.div-buttons .link:hover,
+.div-buttons .link:focus {
+  color: #2196f3;
+}
+
+.h3-imgservices {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  color: #212121;
+}
+
+.p-imgservices {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #757575;
 }
