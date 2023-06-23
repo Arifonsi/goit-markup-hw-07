@@ -10,68 +10,87 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
   </head>
 
   <body>
     <header>
-      <p class="header-logo"><a href="#">WebStudio</a></p>
-      <nav class="header-navigation">
-        <ul class="header-list">
-          <li><a class="link" href="index.html">Estudio</a></li>
-          <li><a class="link" href="portafolio.html">Portafolio</a></li>
-          <li><a class="link" href="#">Contactos</a></li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <nav class="header-navigation">
+            <ul class="header-list">
+              <a class="header-logo" href="#">WebStudio</a>
+              <li><a class="link" href="index.html">Estudio</a></li>
+              <li><a class="link" href="portafolio.html">Portafolio</a></li>
+              <li><a class="link" href="#">Contactos</a></li>
 
-        <ul class="header-list">
-          <li>
-            <a class="link" href="info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li><a class="link" href="+525555296000">+525555296000</a></li>
-        </ul>
-      </nav>
+              <li>
+                <a class="link" href="info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li><a class="link" href="+525555296000">+525555296000</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
     </header>
 
     <main>
-      <section>
-        <h1 class="h1-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="reserva-btn" type="button">
-          Solicite nuestro servicio
-        </button>
+      <section class="section container">
+        <div class="title">
+          <h1 class="h1-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+          <button class="reserva-btn" type="button">
+            Solicite nuestro servicio
+          </button>
+        </div>
       </section>
-      <section>
-        <ul class="h2-list">
-          <li><h2>ATENCIÓN A LOS DETALLES</h2></li>
-        </ul>
+
+      <section class="section">
+        <div class="container">
+        <ul class="h2-text">
+          <li class="h2-tittle"><h2>ATENCIÓN A LOS DETALLES</h2></li>
+       <div>
         <p class="ph2-list">
           Nos adentramos en todos los detalles y procesos de su negocio, para
           así desarrollar una solución a su medida.
         </p>
-        <ul class="h2-list">
-          <li><h2>PUNTUALIDAD</h2></li>
-        </ul>
+        </div>
+       
+          <li class="h2-tittle"><h2>PUNTUALIDAD</h2></li>
+      <div>
         <p class="ph2-list">
           Con nosotros, usted puede sentirse seguro y protegido. Un principio
           importante de la empresa: respetar su tiempo y respetar los plazos
           acordados.
+          
         </p>
-        <ul class="h2-list">
-          <li><h2>PLANIFICACIÓN</h2></li>
-        </ul>
+        </div>
+       
+          <li class="h2-tittle"><h2>PLANIFICACIÓN</h2></li>
+    <div>
         <p class="ph2-list">
           Usted podrá observar y participar en cada fase del desarrollo y
           aplicación de soluciones.
         </p>
-        <ul class="h2-list">
-          <li><h2>TEGNOLOGÍA MODERNA</h2></li>
-        </ul>
+        </div>
+       
+          <li class="h2-tittle"><h2>TEGNOLOGÍA MODERNA</h2></li>
+       <div>
         <p class="ph2-list">
           Usamos herramientas innovadoras para resolver las tareas asignadas. Es
           hora de simplificar los procesos laborales.
         </p>
-      </section>
-      <section>
+        </div>
         <ul>
+          </div>
+      </section>
+      <section class="section">
+        <div class="container">
+      
           <h2 class="h2-subtitle">A qué nos dedicamos</h2>
+            <ul class="whos">
           <li>
             <img
               src="imagenes/laptop1.jpg"
@@ -97,66 +116,89 @@
             />
           </li>
         </ul>
-        <ul>
-          <h2 class="h2-subtitle">NUESTRO EQUIPO</h2>
-          <li>
+        </div>
+        </section>
+        <section class="section">
+      <div class="container">
+        <h2 class="h2-subtitle">NUESTRO EQUIPO</h2>
+        <ul class="our-team">
+          
+          <li class="cards">
             <img
               src="imagenes/hombregafascamisamarron4.jpg"
               alt=" persona con gafas"
               width="270"
               height="260"
             />
+          
+          <div class="text-cards">
+          <h3 class="text-name">Andres Cubo</h3>
+          <p class="text-profession">Diseñador de Productos</p>
+          </div>
           </li>
-          <figcaption class="caption-pic">Andres Cubo</figcaption>
-          <p class="ph2-caption">Diseñador de Productos</p>
-        </ul>
-        <ul>
-          <li>
+        
+        
+          <li class="cards">
             <img
               src="imagenes/mujercongafas5.jpg"
               alt="mujer con gafas"
               width="270"
               height="260"
             />
+          
+          <div class="text-cards">
+          <h3 class="text-name">Carla Palacios</h3>
+          <p class="text-profession">Desarrolladora Frontend</p>
+          </div>
           </li>
-          <figcaption class="caption-pic">Carla Palacios</figcaption>
-          <p class="ph2-caption">Desarrolladora Frontend</p>
-        </ul>
-        <ul>
-          <li>
+        
+        
+          <li class="cards">
             <img
               src="imagenes/hombrecamisaazul6.jpg"
               alt="hombre cucasico"
               width="270"
               height="270"
             />
-          </li>
-          <figcaption class="caption-pic">Mario Dorado</figcaption>
-          <p class="ph2-caption">Marketing</p>
-        </ul>
-        <ul>
-          <li>
+         
+          <div class="text-cards">
+          <h3 class="text-name">Mario Dorado</h3>
+          <p class="text-profession">Marketing</p>
+          </div>
+           </li>
+        
+        
+          <li class="cards">
             <img
               src="imagenes/hombregafascamisetanegra7.jpg"
               alt="hombre de gafas"
               width="260"
               height="270"
             />
-          </li>
-          <figcaption class="caption-pic">Pablo Mijangos</figcaption>
-          <p class="ph2-caption">Diseñador IU</p>
+         
+          <div class="text-cards">
+          <h3 class="text-name">Pablo Mijangos</h3>
+          <p class="text-profession">Diseñador IU</p>
+          </div>
+           </li>
         </ul>
+        </div>
       </section>
     </main>
+    <section class="section">
+      <div class="container">
     <footer>
-      <h3 class="header-logo"><a href="#">WebStudio</a></h3>
+    
       <address>
         <ul class="footer-list">
-          <li><a href="#">Calz.Ticoman 500,ciudad de Mexico,CDMX,Mexico</a></li>
-          <li><a href="#">info@example.com</a></li>
-          <li><a href="#">+525555296000</a></li>
+            <h3 class="footer-logo"><a href="#">WebStudio</a></h3>
+          <li><a class="city" href="#">Calz.Ticoman 500,ciudad de Mexico,CDMX,Mexico</a></li>
+          <li><a class="email-cel" href="#">info@example.com</a></li>
+          <li><a class="email-cel" href="#">+525555296000</a></li>
         </ul>
       </address>
     </footer>
+    </div>
+    </section>
   </body>
 </html>

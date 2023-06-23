@@ -7,17 +7,26 @@ body {
   color: #212121;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.section {
+  padding: 94px 0;
+  margin: auto;
+}
+
 ul {
   list-style: none;
 }
 
 .header-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 30.52px;
   color: #2196f3;
-  cursor: pointer;
+  text-align: right;
+  font-size: 26px;
+  font-family: Raleway;
+  font-weight: 700;
+  letter-spacing: 0.78px;
 }
 
 .header-list {
@@ -26,101 +35,243 @@ ul {
   line-height: 16.41px;
   color: #212121;
   cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  flex-shrink: 0;
+  background: #fff;
 }
 
 .link {
   color: #2f303a;
+  padding-right: 15px;
 }
 
 .link:hover {
   color: #2196f3;
 }
 
+.title {
+  background-color: #2f303a;
+  position: absolute;
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .h1-title {
+  font-family: "roboto";
   font-weight: 900;
   font-size: 44px;
   font-weight: 60px;
+  text-align: center;
   color: #ffffff;
+  letter-spacing: 0.06em;
   background-color: #2f303a;
+  text-transform: uppercase;
 }
 
 .reserva-btn {
-  font-weight: 700;
+  color: #fff;
+  text-align: center;
   font-size: 16px;
+  font-family: Roboto;
+  font-weight: 700;
   line-height: 30px;
-  background-color: #2196f3;
-  cursor: pointer;
+  letter-spacing: 0.96px;
+  display: inline-flex;
+  padding: 10px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.h2-list {
-  font-weight: 700;
+.h2-text {
+  display: flex;
+  width: 270px;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.h2-title {
+  color: #212121;
   font-size: 14px;
-  line-height: 16.41px;
+  font-family: Roboto;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 
 .ph2-list {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.h2-subtitle {
-  font-weight: 700;
-  font-size: 36;
-  line-height: 42.19px;
-}
-
-.caption-pic {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18.75px;
-  color: #212121;
-}
-
-.ph2-caption {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 42.19px;
   color: #757575;
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  display: flex;
+  width: 270px;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.whos {
+  display: flex;
+  justify-content: space-evenly;
+  color: #f5f4fa;
+}
+.h2-subtitle {
+  color: #212121;
+  text-align: center;
+  font-size: 36px;
+  font-family: Roboto;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+}
+
+.our-team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  width: 270px;
+  height: 368px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+
+  /* material shadow v1 */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.text-name {
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+
+.text-profession {
+  color: #757575;
+  text-align: center;
+  font-size: 16px;
+  font-family: Roboto;
+  letter-spacing: 0.48px;
 }
 
 .footer-list {
-  font-weight: 400;
+  display: flex;
+  background: #2f303a;
+  height: 252px;
+  flex-direction: column;
+}
+
+.footer-logo {
+  color: #2196f3;
+  font-size: 26px;
+  font-family: Raleway;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+}
+
+.city {
+  display: flex;
+  width: 231px;
+  height: 21px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #fff
   font-size: 14px;
+  font-family: Roboto;
   line-height: 24px;
-  color: #ffffff;
-  background-color: #2f303a;
-  cursor: pointer;
+  letter-spacing: 0.42px;
+}
+
+.email-cel {
+  color: rgba(255, 255, 255, 0.60);
+font-size: 14px;
+font-family: Roboto;
+line-height: 24px;
+letter-spacing: 0.42px;
+display: flex;
+width: 231px;
+height: 21px;
+flex-direction: column;
+flex-shrink: 0;
+padding-top: 30px;
+
 }
 
 -------------------------------------------------------------------------------------
-  .div-buttons {
-  font-size: 500;
-  font-size: 14px;
-  line-height: 16.41px;
-  color: #212121;
-  cursor: pointer;
-}
-
-.div-buttons .link {
+  .div-buttons
+  .link {
+  background-color: #f5f4fa;
   color: #212121;
 }
 
 .div-buttons .link:hover,
 .div-buttons .link:focus {
-  color: #2196f3;
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.div-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  font-family: "roboto";
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 24px;
+  margin-right: 8px;
+}
+.container-section {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px;
+}
+
+.flex-item {
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .h3-imgservices {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
+  width: 322px;
+  flex-shrink: 0;
   color: #212121;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.08px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
 .p-imgservices {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
+  justify-content: center;
+  padding-left: 24px;
   color: #757575;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 30px;
+  letter-spacing: 0.48px;
 }
