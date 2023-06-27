@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: auto;
 }
 .section {
@@ -95,7 +95,7 @@ ul {
 .h2-text {
   display: flex;
   width: 270px;
-  flex-direction: column;
+  
   flex-shrink: 0;
 }
 
@@ -137,6 +137,8 @@ ul {
 .our-team {
   display: flex;
   justify-content: space-between;
+  background-color: #f5f4fa;
+  
 }
 
 .cards {
@@ -241,6 +243,7 @@ padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   border: 5px;
+  gap: 21px;
 }
 
 .flex-item {
