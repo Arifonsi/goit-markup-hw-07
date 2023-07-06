@@ -5,6 +5,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  margin: 0px;
 }
 
 .container {
@@ -16,8 +17,17 @@ body {
   margin: auto;
 }
 
+.section-nav {
+  margin: auto;
+  padding: 0;
+}
+
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header-logo {
@@ -43,6 +53,21 @@ ul {
   background: #fff;
 }
 
+.header-list2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: rgba(117, 117, 117, 1);
+
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  flex-shrink: 0;
+  background: #fff;
+}
+
 .link {
   color: #2f303a;
   padding-right: 15px;
@@ -52,13 +77,36 @@ ul {
   color: #2196f3;
 }
 
+.icon-header-phone:hover {
+  fill: #2196f3;
+}
+.icon-header-mail:hover {
+  fill: #2196f3;
+}
+
+.icon-header-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.icon-header-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 4px;
+}
+
 .title {
-  background-color: #2f303a;
   display: flex;
   height: 600px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.bg-dark {
+  background-color: #2f303a;
+  background-image: url(/imagenes/fondotitulo.jpg);
+  background-size: cover;
 }
 
 .h1-title {
@@ -69,7 +117,7 @@ ul {
   text-align: center;
   color: #ffffff;
   letter-spacing: 0.06em;
-  background-color: #2f303a;
+
   text-transform: uppercase;
 }
 
@@ -93,6 +141,26 @@ ul {
 
 .h2-text {
   display: flex;
+  justify-content: space-between;
+}
+
+.card-advantage {
+  width: 270px;
+  background: rgba(245, 244, 250, 1);
+  width: 270px;
+  height: 120px;
+  top: 774px;
+  left: 215px;
+  border-radius: 4px;
+}
+.svg-whos {
+  width: 270px;
+  height: 120px;
+  top: 774px;
+  left: 815px;
+  border-radius: 4px;
+  margin-top: 25px;
+  margin-left: 100px;
 }
 
 .h2-title {
@@ -118,7 +186,7 @@ ul {
 
 .whos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: #f5f4fa;
 }
 .h2-subtitle {
@@ -130,15 +198,29 @@ ul {
   letter-spacing: 1.08px;
 }
 
+.app-deck {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  height: 70px;
+  margin-top: -73px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 .our-team {
   display: flex;
   justify-content: space-between;
+}
+
+.bg-gray {
   background-color: #f5f4fa;
 }
 
 .cards {
   width: 270px;
-  height: 368px;
+  height: 428px;
   flex-shrink: 0;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
@@ -146,6 +228,11 @@ ul {
   /* material shadow v1 */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.pics-people {
+  width: 270px;
+  height: 260px;
 }
 
 .text-name {
@@ -165,9 +252,93 @@ ul {
   letter-spacing: 0.48px;
 }
 
+.icons-social-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding-left: 0px;
+}
+.svg-list-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  top: 12px;
+  left: 12px;
+  /* margin-top: 16px; */
+  /* margin-left: 5px; */
+  border-radius: 25px;
+}
+.svg-icon-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+}
+
+.svg-list-social:hover {
+  background-color: #2196f3;
+}
+
+.svg-list-social:hover .svg-icon-social {
+  fill: #eee;
+}
+
+.tittle-customers {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.customers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.customer-list {
+  width: 170px;
+  height: 81px;
+  border-radius: 4px;
+  border: solid rgba(175, 177, 184, 1) 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-list:hover {
+  border: solid #2196f3 1px;
+}
+.customer-list:hover .svg-customers {
+  fill: #2196f3;
+}
+
+.svg-customers {
+  width: 106px;
+  height: 52.826087951660156px;
+  top: 2461.0869750976562px;
+  left: 247px;
+  padding: 7px 33px 0px 32px;
+  fill: rgba(175, 177, 184, 1);
+}
+
+footer {
+  background-color: rgba(47, 48, 58, 1);
+}
+.tittle-footer {
+  color: #f5f4fa;
+}
+
 .footer-list {
   display: flex;
-  background: #2f303a;
   height: 252px;
   flex-direction: column;
   flex-shrink: 0;
@@ -204,16 +375,46 @@ ul {
   flex-shrink: 0;
   padding-top: 30px;
 }
+.container-footer {
+  margin-left: 90px;
+  margin-top: 70px;
+}
+
+.svg-list-socialfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  top: 12px;
+  left: 12px;
+  /* margin-top: 16px; */
+  /* margin-left: 5px; */
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.svg-list-socialfooter:hover {
+  background-color: #2196f3;
+}
+
+.svg-list-socialfooter:hover .svg-icon-social {
+  fill: #eee;
+}
+
+footer .container {
+  display: flex;
+  align-items: flex-start;
+}
 
 -------------------------------------------------------------------------------------
   .div-buttons
-  .link {
+  .link-btn {
   background-color: #f5f4fa;
   color: #212121;
 }
 
-.div-buttons .link:hover,
-.div-buttons .link:focus {
+.div-buttons .link-btn:hover,
+.div-buttons .link-btn:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -223,7 +424,7 @@ ul {
   justify-content: center;
 }
 
-.link {
+.link-btn {
   font-family: "roboto";
   font-size: 16px;
   line-height: 1.6;
