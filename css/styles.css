@@ -96,6 +96,17 @@ a {
   margin-right: 4px;
 }
 
+.header-list::after {
+  width: 48px;
+  height: 4px;
+  top: 76px;
+  left: 543px;
+  border-radius: 2px;
+  position: absolute;
+  content: "";
+  background-color: #2196f3;
+}
+
 .title {
   display: flex;
   height: 600px;
@@ -105,7 +116,13 @@ a {
 }
 .bg-dark {
   background-color: #2f303a;
-  background-image: url(/imagenes/fondotitulo.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(91, 26, 26, 0.4)
+    ),
+    url("/imagenes/fondotitulo.jpg");
+  background-image: url(../imagenes/fondotitulo.jpg);
   background-size: cover;
 }
 
@@ -138,7 +155,59 @@ a {
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+/* MODAL */
+.backdrop {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: auto;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.modal-close-btn-icon {
+  position: absolute;
+  top: 235pxpx;
+  left: 1032px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--second-title-color);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 .h2-text {
   display: flex;
   justify-content: space-between;
@@ -154,10 +223,6 @@ a {
   border-radius: 4px;
 }
 .svg-whos {
-  width: 270px;
-  height: 120px;
-  top: 774px;
-  left: 815px;
   border-radius: 4px;
   margin-top: 25px;
   margin-left: 100px;
@@ -189,14 +254,6 @@ a {
   justify-content: space-between;
   color: #f5f4fa;
 }
-.h2-subtitle {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-family: Roboto;
-  font-weight: 700;
-  letter-spacing: 1.08px;
-}
 
 .app-deck {
   position: relative;
@@ -209,6 +266,15 @@ a {
   background: rgba(47, 48, 58, 0.8);
 }
 
+.h2-subtitle {
+  color: #212121;
+  text-align: center;
+  font-size: 36px;
+  font-family: Roboto;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  margin-top: 90px;
+}
 .our-team {
   display: flex;
   justify-content: space-between;
@@ -254,7 +320,6 @@ a {
 
 .icons-social-svg {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 25px;
   padding-left: 0px;
@@ -299,9 +364,7 @@ a {
 
 .customers-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .customer-list {
@@ -314,20 +377,18 @@ a {
   align-items: center;
 }
 
+.svg-customers {
+  width: 106px;
+  height: 52.826087951660156px;
+  padding: 7px 33px 0px 32px;
+  fill: rgba(175, 177, 184, 1);
+}
+
 .customer-list:hover {
   border: solid #2196f3 1px;
 }
 .customer-list:hover .svg-customers {
   fill: #2196f3;
-}
-
-.svg-customers {
-  width: 106px;
-  height: 52.826087951660156px;
-  top: 2461.0869750976562px;
-  left: 247px;
-  padding: 7px 33px 0px 32px;
-  fill: rgba(175, 177, 184, 1);
 }
 
 footer {
@@ -436,6 +497,32 @@ footer .container {
   margin-right: 8px;
   cursor: pointer;
 }
+
+.card-container {
+  width: 370px;
+  height: 294px;
+  border: 1px solid #eeeeee;
+}
+.card-animation {
+  position: absolute;
+  top: 0%;
+  height: 294px;
+  width: 370px;
+  background: rgba(33, 150, 243, 0.9);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 63px 24px;
+  transform: translateY(105%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-image {
+  position: relative;
+  overflow: hidden;
+}
+.card-container:hover .card-animation {
+  transform: translateY(0%);
+}
 .container-section {
   display: flex;
   flex-wrap: wrap;
@@ -454,7 +541,7 @@ footer .container {
   box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
 }
 
-.h3-imgservices {
+.h3-imgservic.es {
   width: 322px;
   color: #212121;
   font-size: 18px;

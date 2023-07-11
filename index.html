@@ -26,7 +26,7 @@
           <nav class="header-navigation header-list">
             <a class="header-logo" href="#">WebStudio</a>
             <ul class="header-list">
-              <li><a class="link" href="index.html">Estudio</a></li>
+              <li><a class="link underline"   href="index.html">Estudio</a></li>
               <li><a class="link" href="portafolio.html">Portafolio</a></li>
               <li><a class="link" href="#">Contactos</a></li>
             </ul>
@@ -61,7 +61,7 @@
             SOLUCIONES EFICACES PARA <br />
             SU NEGOCIO
           </h1>
-          <button class="reserva-btn" type="button">
+          <button class="reserva-btn" type="button" data-modal-open>
             Solicite nuestro servicio
           </button>
         </div>
@@ -408,5 +408,15 @@
         </section>
       </div>
     </footer>
-  </body>
+       <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="18px" height="18px">
+            <use href="imagenes/SVG/icons.svg#close-x"></use>
+          </svg>
+          </button>
+          </div>
+          
+    <script src="./js/modal.js"></script>
+      </body>
 </html>
