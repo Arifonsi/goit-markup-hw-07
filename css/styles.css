@@ -251,6 +251,26 @@ a {
   border: 1px;
   align-items: center;
   color: rgba(117, 117, 117, 1);
+  padding-bottom: 10px;
+}
+
+.form-label-coments {
+   display: flex;
+  position: relative;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  width: 44px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1px;
+  align-items: center;
+  
+  color: rgba(117, 117, 117, 1);
+  padding-bottom: 10px;
 }
 
 .txtarea-form-modal {
@@ -263,6 +283,9 @@ a {
   padding-top: 12px;
   padding-left: 16px;
   color: rgba(117, 117, 117, 0.5);
+  width: 448px;
+  height: 120px;
+  
 }
 
 .input {
@@ -294,6 +317,7 @@ a {
   letter-spacing: 0.03em;
   text-align: left;
   color: rgba(117, 117, 117, 1);
+
 }
 
 .input-ckb {
@@ -312,6 +336,7 @@ a {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-left: 120px;
+  margin-top: -25px;
 }
 
 .btn-sub:hover {
@@ -591,11 +616,15 @@ footer .container {
   letter-spacing: 0.03em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
-  margin-left: 50px;
+  margin-left: 40px;
+}
+
+.form-footer {
+  display: flex;
 }
 
 .input-footer-mail {
-  margin-left: 50px;
+  margin-left: 40px;
   background-color: transparent;
   width: 358px;
   height: 50px;
@@ -618,16 +647,16 @@ footer .container {
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
-  margin-left: 425px;
-  margin-top: -650px;
+  margin-left: 12px;
   padding-right: 45px;
-  position: relative;
+  
 }
 
 
 .svg-footer-btn{
 position: absolute;
-padding-right: 250px;
+padding-left: 160px;
+padding-top: 13px;
 
 
 }
