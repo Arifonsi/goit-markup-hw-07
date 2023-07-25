@@ -205,7 +205,6 @@ a {
   pointer-events: none;
 }
 
-
 /* FORMULARIO MODAL */
 .form-title {
   font-family: Roboto;
@@ -232,10 +231,13 @@ a {
 
 .svg-form {
   position: absolute;
-  top: 24px;
-  left: 10px;
-  width: 24px;
-  height: px;
+  display: block;
+  top: 50%;
+  left: 15px;
+  /* transform: translateY(48%); */
+  width: 18px;
+  height: 18px;
+  /* border: 1px solid red; */
 }
 
 .form-label {
