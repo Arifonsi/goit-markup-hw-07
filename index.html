@@ -435,33 +435,40 @@
         </button>
         <h2 class="form-title">Deje sus datos, nos contactaremos con usted</h2>
         <form class="form" action="">
-          <div class="form-modal">
-            <svg class="svg-form">
-              <use href="imagenes/SVG/icons.svg#person"></use>
-            </svg>
-            <label class="form-label" for="user_name">Nombre</label>
-            <input
-              class="input"
-              type="text"
-              name="fullname"
-              autofocus
-              id="user_name"
-            />
-          </div>
-          <div class="form-modal">
-            <svg class="svg-form" width="18px" height="18px">
-              <use href="imagenes/SVG/icons.svg#telephone"></use>
-            </svg>
-            <label class="form-label" for="user_phone">Telefono</label>
-            <input class="input" type="tel" name="phone" id="user_phone" />
-          </div>
-          <div class="form-modal">
-            <svg class="svg-form">
-              <use href="imagenes/SVG/icons.svg#correo"></use>
-            </svg>
-            <label class="form-label" for="user_email">E-mail</label>
-            <input class="input" type="email" name="email" id="user_email" />
-          </div>
+          <label class="form-label" for="user_name"
+            >Nombre
+            <span class="container-input">
+              <input
+                class="input"
+                type="text"
+                name="fullname"
+                autofocus
+                id="user_name"
+              />
+              <svg class="svg-form" width="12px" height="12px">
+                <use href="imagenes/SVG/icons.svg#person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="form-label" for="user_phone"
+            >Telefono
+            <span class="container-input">
+              <input class="input" type="tel" name="phone" id="user_phone" />
+              <svg class="svg-form" width="12px" height="12px">
+                <use href="imagenes/SVG/icons.svg#telephone"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-label" for="user_email"
+            >E-mail
+            <span class="container-input">
+              <input class="input" type="email" name="email" id="user_email" />
+              <svg class="svg-form" width="12px" height="12px">
+                <use href="imagenes/SVG/icons.svg#correo"></use>
+              </svg>
+            </span>
+          </label>
 
           <div>
             <label class="form-label-coments" for="comment">Comentarios</label>
@@ -476,7 +483,7 @@
           </div>
           <div>
             <input
-              class="input-ckb modal-form-checkbox"
+              class="input-ckb"
               type="checkbox"
               name="email"
               id="ckb"
