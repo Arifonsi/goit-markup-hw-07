@@ -303,16 +303,15 @@ a {
 
 /* REVISAR */
 
-.input:hover,
+.input:hover + .svg-form,
 .input:focus + .svg-form {
-  border-color: #2196f3;
   fill: #2196f3;
   cursor: pointer;
 }
 
-.svg-form:hover {
+/* .svg-form:hover {
   fill: #2196f3;
-}
+} */
 
 /* REVISAR REVISAR */
 
@@ -326,6 +325,11 @@ a {
   color: rgba(117, 117, 117, 1);
 }
 
+.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+  background-image: url(./images/iconcheck.svg);
+  border-color: #2196f3;
+  background-color: #2196f3;
+}
 .input-ckb {
   width: 16px;
   height: 15px;
