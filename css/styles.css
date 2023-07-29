@@ -309,7 +309,7 @@ a {
   cursor: pointer;
 }
 
-.input-ckb: checked + .input-ckb::before {
+.input-ckb:checked + .form-label-ckb::before {
   background-image: url(./images/iconcheck.svg);
   border-color: #2196f3;
   background-color: #2196f3;
@@ -356,12 +356,6 @@ a {
   margin-bottom: 20px;
 }
 
-.input-ckb:checked + .modal-form-checkbox-label::before {
-  background-image: url(./images/iconcheck.svg);
-  border-color: #2196f3;
-  background-color: #2196f3;
-}
-
 .form-label-ckb {
   display: flex;
   align-items: center;
@@ -395,6 +389,8 @@ a {
   border-radius: 4px;
   margin-top: 25px;
   margin-left: 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .h2-title {
@@ -673,15 +669,14 @@ footer .container {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.06em;
-  margin-left: 12px;
-  padding-right: 45px;
+  margin-left: 30px;
 }
 
 .svg-footer-btn {
-  position: absolute;
-  padding-left: 160px;
-  padding-top: 13px;
+  margin-left: 8px;
+  margin-top: -1px;
 }
+
 .input-ckb {
   cursor: pointer;
 }
