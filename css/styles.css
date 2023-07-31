@@ -310,7 +310,7 @@ a {
 }
 
 .input-ckb:checked + .form-label-ckb::before {
-  background-image: url(./images/iconcheck.svg);
+  background-image: url(../imagenes/iconcheck.svg);
   border-color: #2196f3;
   background-color: #2196f3;
 }
