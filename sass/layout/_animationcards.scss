@@ -1,0 +1,59 @@
+.card__container {
+  width: 370px;
+}
+.card__animation {
+  position: absolute;
+  top: 0%;
+  height: 294px;
+  width: 370px;
+  background: rgba(33, 150, 243, 0.9);
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  padding: 63px 24px;
+  transform: translateY(105%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card__image {
+  position: relative;
+  overflow: hidden;
+}
+.card__container:hover .card__animation {
+  transform: translateY(0%);
+}
+.container__section {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px;
+  gap: 21px;
+}
+
+.flex__item {
+  border: 1px solid var(--white-color);
+  background: var(--white-color);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  &:hover {
+    box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.h3__imgservices {
+  width: 322px;
+  color: var(--black-color);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.08px;
+  padding-left: 24px;
+}
+
+.p__imgservices {
+  padding-left: 24px;
+  color: #757575;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+}

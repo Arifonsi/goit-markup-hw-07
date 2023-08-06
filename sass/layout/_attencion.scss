@@ -1,0 +1,48 @@
+.h2__text {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+  color: var(--black-color);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+}
+
+.card__advantage {
+  width: 270px;
+  background: rgba(245, 244, 250, 1);
+  width: 270px;
+  height: 120px;
+  top: 774px;
+  left: 215px;
+  border-radius: 4px;
+}
+.svg__whos {
+  border-radius: 4px;
+  margin-top: 25px;
+  margin-left: 100px;
+  width: 70px;
+  height: 70px;
+}
+
+.ph2__list {
+  color: #757575;
+  font-size: 14px;
+  font-family: Roboto;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  display: flex;
+  width: 270px;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.whos {
+  display: flex;
+  justify-content: space-between;
+  color: #f5f4fa;
+}
+
