@@ -1,7 +1,7 @@
 footer {
   background-color: rgba(47, 48, 58, 1);
 }
-.title__footer {
+.footer__title {
   color: #f5f4fa;
 }
 
@@ -56,17 +56,14 @@ footer {
   height: 44px;
   top: 12px;
   left: 12px;
-  /* margin-top: 16px; */
-  /* margin-left: 5px; */
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
-}
-.svg__list__socialfooter:hover {
-  background-color: var(--blue-color);
-}
-
-.svg__list__socialfooter:hover .svg__icon__social {
-  fill: #eee;
+  &:hover {
+    background-color: var(--blue-color);
+    &:hover .svg__icon__social {
+      fill: #eee;
+    }
+  }
 }
 
 footer .container {

@@ -86,11 +86,9 @@ a {
   position: relative;
   display: inline-block;
 }
-
 .link:hover {
   color: var(--blue-color);
 }
-
 .link:hover {
   fill: var(--blue-color);
 }
@@ -522,7 +520,6 @@ a {
       flex-shrink: 0;
   border-radius: 0px 0px 4px 4px;
   background: var(--white-color);
-  /* material shadow v1 */
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -574,9 +571,13 @@ a {
   height: 44px;
   top: 12px;
   left: 12px;
-  /* margin-top: 16px; */
-  /* margin-left: 5px; */
   border-radius: 25px;
+}
+.svg__list__social:hover {
+  background-color: var(--blue-color);
+}
+.svg__list__social:hover .svg__icon__social {
+  fill: var(--white-color);
 }
 
 .svg__icon__social {
@@ -592,14 +593,6 @@ a {
   width: 20px;
   height: 20px;
   fill: rgb(175, 177, 184);
-}
-
-.svg__list__social:hover {
-  background-color: var(--blue-color);
-}
-
-.svg__list__social:hover .svg__icon__social {
-  fill: var(--white-color);
 }
 
 .title__customers {
@@ -633,6 +626,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+.customer__list:hover {
+  border: solid var(--blue-color) 1px;
+}
+.customer__list:hover .svg__customers {
+  fill: var(--blue-color);
+}
 
 .svg__customers {
   width: 106px;
@@ -641,19 +640,11 @@ a {
   fill: rgb(175, 177, 184);
 }
 
-.customer__list:hover {
-  border: solid var(--blue-color) 1px;
-}
-
-.customer__list:hover .svg__customers {
-  fill: var(--blue-color);
-}
-
 footer {
   background-color: rgb(47, 48, 58);
 }
 
-.title__footer {
+.footer__title {
   color: #f5f4fa;
 }
 
@@ -724,17 +715,13 @@ footer {
   height: 44px;
   top: 12px;
   left: 12px;
-  /* margin-top: 16px; */
-  /* margin-left: 5px; */
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
 }
-
 .svg__list__socialfooter:hover {
   background-color: var(--blue-color);
 }
-
-.svg__list__socialfooter:hover .svg__icon__social {
+.svg__list__socialfooter:hover:hover .svg__icon__social {
   fill: #eee;
 }
 
@@ -809,11 +796,6 @@ footer .container {
   text-align: center;
 }
 
-.div__buttons .link__btn {
-  background-color: #f5f4fa;
-  color: var(--black-color);
-}
-
 .div__buttons .link__btn:hover,
 .div__buttons .link__btn:focus {
   background-color: var(--blue-color);
@@ -830,6 +812,10 @@ footer .container {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.div__buttonslink__btn {
+  background-color: #f5f4fa;
+  color: var(--black-color);
+}
 
 .link__btn {
   font-family: "roboto";
@@ -845,6 +831,10 @@ footer .container {
 
 .card__container {
   width: 370px;
+}
+.card__container:hover .card__animation {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .card__animation {
@@ -869,11 +859,6 @@ footer .container {
 .card__image {
   position: relative;
   overflow: hidden;
-}
-
-.card__container:hover .card__animation {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
 }
 
 .container__section {

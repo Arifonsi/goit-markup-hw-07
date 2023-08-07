@@ -1,5 +1,8 @@
 .card__container {
   width: 370px;
+  &:hover .card__animation {
+  transform: translateY(0%);
+}
 }
 .card__animation {
   position: absolute;
@@ -18,9 +21,7 @@
   position: relative;
   overflow: hidden;
 }
-.card__container:hover .card__animation {
-  transform: translateY(0%);
-}
+
 .container__section {
   display: flex;
   flex-wrap: wrap;

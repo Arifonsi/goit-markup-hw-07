@@ -38,14 +38,12 @@
   padding-right: 15px;
   position: relative;
   display: inline-block;
-}
-
-.link:hover {
-  color: var(--blue-color);
-}
-
-.link:hover {
-  fill: var(--blue-color);
+  &:hover {
+    color: var(--blue-color);
+  }
+  &:hover {
+    fill: var(--blue-color);
+  }
 }
 
 .icon__header__phone {

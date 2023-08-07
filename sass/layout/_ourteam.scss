@@ -22,8 +22,6 @@
   flex-shrink: 0;
   border-radius: 0px 0px 4px 4px;
   background: var(--white-color);
-
-  /* material shadow v1 */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -64,9 +62,13 @@
   height: 44px;
   top: 12px;
   left: 12px;
-  /* margin-top: 16px; */
-  /* margin-left: 5px; */
   border-radius: 25px;
+  &:hover {
+    background-color: var(--blue-color);
+  }
+  &:hover .svg__icon__social {
+    fill: var(--white-color);
+  }
 }
 .svg__icon__social {
   display: flex;
@@ -75,12 +77,4 @@
   width: 20px;
   height: 20px;
   fill: rgba(175, 177, 184, 1);
-}
-
-.svg__list__social:hover {
-  background-color: var(--blue-color);
-}
-
-.svg__list__social:hover .svg__icon__social {
-  fill: var(--white-color);
 }

@@ -439,8 +439,6 @@ a {
   background: rgba(47, 48, 58, 0.8);
 }
 
-
-
 .h2__subtitle {
   color: var(--black-color);
   text-align: center;
@@ -569,7 +567,7 @@ a {
 footer {
   background-color: rgba(47, 48, 58, 1);
 }
-.title__footer {
+.footer__title {
   color: #f5f4fa;
 }
 
