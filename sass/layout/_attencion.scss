@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   &__title {
-  color: var(--black-color);
+  color: $black-color;
   font-size: 14px;
-  font-family: Roboto;
+  font-family: $font-robot;
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
@@ -31,7 +31,7 @@
 .ph2__list {
   color: #757575;
   font-size: 14px;
-  font-family: Roboto;
+  font-family: $font-robot;
   line-height: 24px;
   letter-spacing: 0.42px;
   display: flex;

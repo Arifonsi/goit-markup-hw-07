@@ -1,5 +1,5 @@
 .title__customers {
-  font-family: Roboto;
+  font-family: $font-robot;
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
@@ -21,10 +21,10 @@
   justify-content: center;
   align-items: center;
   &:hover {
-    border: solid var(--blue-color) 1px;
+    border: solid $blue-color 1px;
   }
   &:hover .svg__customers {
-    fill: var(--blue-color);
+    fill: $blue-color;
   }
 }
 
