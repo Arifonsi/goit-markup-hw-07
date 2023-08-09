@@ -48,7 +48,7 @@ footer {
   margin-top: 70px;
 }
 
-.svg__list__socialfooter {
+.svg__list--socialfooter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ footer .container {
   align-items: flex-start;
 }
 
-.title__footer__form {
+.title__footer--form {
   margin-top: 87px;
   width: 275px;
   height: 16px;
@@ -89,7 +89,7 @@ footer .container {
   display: flex;
 }
 
-.input__footer__mail {
+.input__footer--mail {
   margin-left: 40px;
   background-color: transparent;
   width: 358px;
@@ -98,7 +98,7 @@ footer .container {
   padding-left: 18px;
 }
 
-.btn__form__footer {
+.btn__form--footer {
   background-color: $blue-color;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 200px;
@@ -111,7 +111,7 @@ footer .container {
   margin-left: 30px;
 }
 
-.svg__footer__btn {
+.svg__footer--btn {
   margin-left: 8px;
   margin-top: -1px;
 }

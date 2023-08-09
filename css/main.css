@@ -39,7 +39,6 @@ a {
   font-weight: 700;
   letter-spacing: 0.78px;
 }
-
 .header__list {
   font-weight: 500;
   font-size: 14px;
@@ -60,7 +59,6 @@ a {
   gap: 32px;
   border-bottom: 1px solid rgb(236, 236, 236);
 }
-
 .header__list2 {
   font-weight: 500;
   font-size: 14px;
@@ -93,13 +91,13 @@ a {
   fill: #2196f3;
 }
 
-.icon__header__phone {
+.icon__header--phone {
   width: 10px;
   height: 16px;
   margin-right: 4px;
 }
 
-.icon__header__mail {
+.icon__header--mail {
   width: 16px;
   height: 12px;
   margin-right: 4px;
@@ -216,7 +214,7 @@ a {
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.modal__close__btn {
+.modal__close--btn {
   position: absolute;
   right: 16px;
   top: 16px;
@@ -224,14 +222,14 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
 }
-.modal__close__btn__icon {
+.modal__close--btn--icon {
   width: 30px;
   height: 30px;
   border: 1 px solid black;
   cursor: pointer;
   padding: 0;
 }
-.modal__close__btn:hover, .modal__close__btn:focus {
+.modal__close--btn:hover, .modal__close--btn:focus {
   fill: black;
   border-color: #2196f3;
 }
@@ -274,7 +272,7 @@ a {
   color: rgb(117, 117, 117);
   padding-bottom: 10px;
 }
-.form__label__coments {
+.form__label--coments {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,7 +293,7 @@ a {
   color: rgb(117, 117, 117);
   padding-bottom: 10px;
 }
-.form__label__ckb::before {
+.form__label--ckb::before {
   content: "";
   display: block;
   width: 20px;
@@ -306,7 +304,7 @@ a {
   margin-right: 9px;
   margin-bottom: 20px;
 }
-.form__label__ckb {
+.form__label--ckb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,7 +331,7 @@ a {
   height: 16px;
 }
 
-.txtarea__form__modal {
+.txtarea__form--modal {
   resize: none;
   font-family: font-family "Roboto";
   font-size: 12px;
@@ -356,7 +354,7 @@ a {
   padding-left: 40px;
 }
 .input:focus, .input:focus + .svg__form {
-  border-color: var(--blue-color);
+  border-color: #2196f3;
   fill: #2196f3;
 }
 .input:hover, .input:hover + .svg__form {
@@ -364,7 +362,7 @@ a {
   fill: #2196f3;
   cursor: pointer;
 }
-.input__ckb:checked + .form__label__ckb::before {
+.input__ckb:checked + .form__label--ckb::before {
   background-image: url(../imagenes/iconcheck.svg);
   border-color: #2196f3;
   background-color: #2196f3;
@@ -384,7 +382,8 @@ a {
   color: #ffffff;
   border-color: #2196f3;
 }
-.btn__sub.ckb__personalized {
+
+.ckb__personalized {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,7 +545,7 @@ a {
   letter-spacing: 0.48px;
 }
 
-.icons__social__svg {
+.icons__social--svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,7 +556,7 @@ a {
   padding-left: 0px;
 }
 
-.svg__list__social {
+.svg__list--social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,14 +572,14 @@ a {
   left: 12px;
   border-radius: 25px;
 }
-.svg__list__social:hover {
+.svg__list--social:hover {
   background-color: #2196f3;
 }
-.svg__list__social:hover .svg__icon__social {
+.svg__list--social:hover .svg__icon--social {
   fill: #ffffff;
 }
 
-.svg__icon__social {
+.svg__icon--social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,7 +700,7 @@ footer {
   margin-top: 70px;
 }
 
-.svg__list__socialfooter {
+.svg__list--socialfooter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,10 +717,10 @@ footer {
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
 }
-.svg__list__socialfooter:hover {
+.svg__list--socialfooter:hover {
   background-color: #2196f3;
 }
-.svg__list__socialfooter:hover:hover .svg__icon__social {
+.svg__list--socialfooter:hover:hover .svg__icon__social {
   fill: #eee;
 }
 
@@ -734,7 +733,7 @@ footer .container {
           align-items: flex-start;
 }
 
-.title__footer__form {
+.title__footer--form {
   margin-top: 87px;
   width: 275px;
   height: 16px;
@@ -754,7 +753,7 @@ footer .container {
   display: flex;
 }
 
-.input__footer__mail {
+.input__footer--mail {
   margin-left: 40px;
   background-color: transparent;
   width: 358px;
@@ -763,7 +762,7 @@ footer .container {
   padding-left: 18px;
 }
 
-.btn__form__footer {
+.btn__form--footer {
   background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -777,7 +776,7 @@ footer .container {
   margin-left: 30px;
 }
 
-.svg__footer__btn {
+.svg__footer--btn {
   margin-left: 8px;
   margin-top: -1px;
 }

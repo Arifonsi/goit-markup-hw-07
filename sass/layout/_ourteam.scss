@@ -48,13 +48,13 @@
   letter-spacing: 0.48px;
 }
 
-.icons__social__svg {
+.icons__social--svg {
   display: flex;
   justify-content: center;
   gap: 25px;
   padding-left: 0px;
 }
-.svg__list__social {
+.svg__list--social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,11 +66,11 @@
   &:hover {
     background-color: $blue-color;
   }
-  &:hover .svg__icon__social {
+  &:hover .svg__icon--social {
     fill: $white-color;
   }
 }
-.svg__icon__social {
+.svg__icon--social {
   display: flex;
   justify-content: center;
   align-items: center;
